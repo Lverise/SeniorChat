@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SeniorChat 2</string>
+    <string name="texto_bienvenida">Hola!\nBienvenido\na</string>
+    <string name="nombre_app">SeniorChat</string>
+    <string name="nombre_usuario">Tú Nombre:</string>
+    <string name="telefono">Tú Teléfono:</string>
+    <string name="btn_registrar">Registrarse</string>
+
+</resources>

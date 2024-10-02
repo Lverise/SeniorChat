@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9"
+    android:gravity="center"
+    android:onClick="tu_salud"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-18dp"
+        android:padding="10dp">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/boton_redondo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bree_serif"
+            android:text="SeniorChat"
+            android:textColor="@color/blue_700"
+            android:textSize="48sp" />
+
+    </FrameLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="4">
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/blanco"
+            android:drawableTop="@drawable/icono_chat_350"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="chat"
+            android:paddingTop="15dp"
+            android:text="Chat"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/icono_calendario_350"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="actividades"
+            android:paddingTop="15dp"
+            android:text="Actividades"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/icono_contactos_350"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="contactos"
+            android:paddingTop="15dp"
+            android:text="Contactos"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/icono_salud_350"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="tu_salud"
+            android:paddingTop="15dp"
+            android:text="Tu Salud"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/icono_ajuste_350"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="ajustes"
+            android:paddingTop="15dp"
+            android:text="Ajustes"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/icono_danger"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="emergencias"
+            android:paddingTop="15dp"
+
+            android:text="Emergencias"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/icono_ubicacion_2_1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="ubicacion"
+            android:paddingTop="15dp"
+            android:text="Mi Ubicación"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+
+
+            app:cornerRadius="15dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/logout"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="logout"
+            android:paddingTop="15dp"
+            android:text="Cerrar Sesión"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+    </GridLayout>
+
+</LinearLayout>
