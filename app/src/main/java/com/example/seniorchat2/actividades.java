@@ -1,24 +1,52 @@
 package com.example.seniorchat2;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.Button;
+import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class actividades extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class actividades extends AppCompatActivity implements AgregarActividadModal.OnNuevaActividadListener {
+
+    private ArrayList<ItemActividad> listaActividades;
+    private AdapterActividades adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_actividades);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        Button botonVolver = findViewById(R.id.atras_actividades);
+        botonVolver.setOnClickListener(view -> onBackPressed());
+
+        listaActividades = new ArrayList<>();
+        listaActividades.add(new ItemActividad("Reunión", "12 Octubre", "15:00", false, null));
+        listaActividades.add(new ItemActividad("Lota", "13 Octubre", "10:30", true, null));
+        listaActividades.add(new ItemActividad("Clase Yoga", "14 Octubre", "18:00", false, null));
+        listaActividades.add(new ItemActividad("Taller de Manualidades", "15 Octubre", "16:00", true, null));
+
+        ListView listView = findViewById(R.id.listview_actividades);
+        adapter = new AdapterActividades(this, listaActividades);
+        listView.setAdapter(adapter);
+
+        FloatingActionButton fab = findViewById(R.id.boton_flotante);
+        fab.setOnClickListener(v -> {
+            AgregarActividadModal dialog = new AgregarActividadModal(this);
+            dialog.show(getSupportFragmentManager(), "AgregarActividadModal");
         });
+    }
+
+    @Override
+    public void onNuevaActividad(ItemActividad actividad) {
+        listaActividades.add(actividad);
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

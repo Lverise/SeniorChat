@@ -14,13 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-18dp"
-        android:padding="10dp">
+        android:padding="5dp">
 
 
         <View
             android:layout_width="380dp"
             android:layout_height="65dp"
-            android:background="@drawable/boton_redondo" />
+            android:background="@drawable/boton_redondo"
+            android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,14 +49,13 @@
             android:layout_margin="10dp"
             android:backgroundTint="@color/blanco"
             android:drawableTop="@drawable/icono_chat_350"
-            android:drawablePadding="5dp"
             android:fontFamily="@font/dm_sans"
             android:gravity="bottom|center_horizontal"
             android:onClick="chat"
             android:paddingTop="15dp"
             android:text="Chat"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="16dp"
             app:cornerRadius="15dp" />
 
 
@@ -134,7 +134,6 @@
             android:gravity="bottom|center_horizontal"
             android:onClick="emergencias"
             android:paddingTop="15dp"
-
             android:text="Emergencias"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -154,8 +153,6 @@
             android:text="Mi Ubicación"
             android:textColor="@color/black"
             android:textSize="16sp"
-
-
             app:cornerRadius="15dp" />
 
         <Button

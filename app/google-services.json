@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1005324310542",
+    "project_id": "app-android-prueba-b4f44",
+    "storage_bucket": "app-android-prueba-b4f44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005324310542:android:e93ce41da9cf5efd51845f",
+        "android_client_info": {
+          "package_name": "com.example.seniorchat2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJUNuWayCCN6SVLjtJwcH6a1YIcB-Vm_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

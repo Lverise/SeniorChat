@@ -5,5 +5,8 @@
     <string name="nombre_usuario">Tú Nombre:</string>
     <string name="telefono">Tú Teléfono:</string>
     <string name="btn_registrar">Registrarse</string>
+    <string name="btn_agregar_actividad">Agregar Actividad</string>
+    <string name="titulo_actividades">Actividades</string>
+    <string name="btn_volver">Volver</string>
 
 </resources>
