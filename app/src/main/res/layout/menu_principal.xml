@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="#d9d9d9"
     android:gravity="center"
-    android:onClick="tu_salud"
     android:orientation="vertical"
     android:padding="20dp">
 
@@ -13,7 +12,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-18dp"
+        android:layout_marginTop="0dp"
         android:padding="5dp">
 
 

@@ -44,7 +44,7 @@ public class AdapterActividades extends ArrayAdapter<ItemActividad> {
         if (actividad.getImagen() != null) {
             imagenActividad.setImageBitmap(actividad.getImagen());
         } else {
-            imagenActividad.setImageResource(R.drawable.icono_ajuste_350); // Imagen predeterminada si no hay imagen
+            imagenActividad.setImageResource(R.drawable.icono_ajuste_350);
         }
 
         return convertView;

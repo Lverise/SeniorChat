@@ -31,51 +31,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/textView4" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="237dp"
-        android:fontFamily="@font/dm_sans"
-        android:labelFor="@id/nombre_usuario"
-        android:text="Tú Nombre:"
-        android:textSize="21.5dp"
-        app:layout_constraintEnd_toEndOf="@+id/nombre_usuario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <EditText
-        android:id="@+id/nombre_usuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="350dp"
-        android:background="@drawable/input_redondo"
-        android:ems="10"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:padding="12dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="233dp"
-        android:fontFamily="@font/dm_sans"
-        android:labelFor="@id/telefono"
-        android:text="Tú Teléfono:"
-        android:textSize="21.5dp"
-        app:layout_constraintEnd_toEndOf="@+id/telefono"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_usuario" />
-
     <EditText
         android:id="@+id/telefono"
         android:layout_width="wrap_content"
@@ -87,6 +42,7 @@
         android:minHeight="48dp"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -94,15 +50,49 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="44dp"
         android:width="350dp"
         android:backgroundTint="@color/blue_700"
         android:fontFamily="@font/dm_sans"
         android:onClick="menu_principal"
-        android:text="Registrarse"
+        android:text="Iniciar Sesión"
         app:cornerRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="233dp"
+        android:fontFamily="@font/dm_sans"
+        android:labelFor="@id/telefono"
+        android:text="Tú Teléfono:"
+        android:textSize="21.5dp"
+        app:layout_constraintEnd_toEndOf="@+id/telefono"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/dm_sans"
+        android:minHeight="48dp"
+        android:onClick="menu_principal"
+        android:text="No tienes una cuenta? Registrate!"
+        android:textColor="@color/blue_700"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

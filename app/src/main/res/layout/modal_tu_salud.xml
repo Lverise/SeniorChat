@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/input_nombre_salud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_agregar"
+        android:hint="Nombre de la actividad"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <EditText
+        android:id="@+id/input_fecha_salud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_agregar"
+        android:hint="Fecha"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <EditText
+        android:id="@+id/input_hora_salud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_agregar"
+        android:hint="Hora"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/imagen_seleccionada"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/btn_agregar_tu_salud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Agregar"
+        android:textColor="#000000"
+        android:backgroundTint="#E0E0E0"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:onClick="agregarSalud" />
+
+</LinearLayout>

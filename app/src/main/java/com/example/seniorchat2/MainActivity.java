@@ -18,14 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void menu_principal(View v){
 
-        EditText campo1 = this.findViewById(R.id.nombre_usuario);
-        String nombre = campo1.getText().toString();
         EditText campo2 = this.findViewById(R.id.telefono);
         String telefono = campo2.getText().toString();
 
-        if (nombre.isEmpty() || telefono.isEmpty()) {
+        if (telefono.isEmpty()) {
             Toast.makeText(this, "Los campos no pueden estar vacíos", Toast.LENGTH_SHORT).show();
-        } else if (nombre.equals("admin") && telefono.equals("1234")) {
+        } else if (telefono.equals("1234")) {
             Intent i = new Intent(this, MenuPrincipalActivity.class);
             startActivity(i);
         } else {

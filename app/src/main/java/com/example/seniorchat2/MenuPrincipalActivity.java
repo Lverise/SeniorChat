@@ -33,10 +33,11 @@ public class MenuPrincipalActivity extends AppCompatActivity {
     }
     public void ajustes(View v){
         Intent i = new Intent(this, ajustes.class);
-    }
-    public void logout(View v){
-        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
+    }
+
+    public void logout(View v){
+        finish();
     }
     public void ubicacion(View v){
         Intent i = new Intent(this, ubicacion.class);
